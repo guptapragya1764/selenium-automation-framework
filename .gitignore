@@ -1,0 +1,7 @@
+# Default ignored files
+logs/
+test-results/
+target/
+.idea/
+
+

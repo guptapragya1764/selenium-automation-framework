@@ -1,0 +1,51 @@
+package com.nagp.factory;
+
+import static com.nagp.constants.MessageConstants.ERROR_MESSAGE_FILE_NOT_FOUND;
+import static com.nagp.factory.LoggerFactory.info;
+import static java.lang.ClassLoader.getSystemClassLoader;
+import static java.lang.String.format;
+import static java.util.Objects.requireNonNull;
+
+import com.nagp.constants.FrameworkConstants;
+import com.nagp.exceptions.IncorrectFilePathException;
+import java.io.File;
+import java.io.IOException;
+import org.apache.commons.io.FileUtils;
+
+/**
+ * This class acts as factory for producing File Object.
+ */
+public final class FileFactory {
+
+  /**
+   * Private constructor to avoid external instantiation.
+   */
+  private FileFactory() {
+  }
+
+  /**
+   * @param fileName Name should be relative path from resources folder
+   * @return {@link java.io.File} instance having full file path
+   */
+  public static File resource(String fileName) {
+    File file;
+    try {
+      file = new File(requireNonNull(getSystemClassLoader().getResource(fileName)).getFile());
+    } catch (NullPointerException ex) {
+      throw new IncorrectFilePathException(format(ERROR_MESSAGE_FILE_NOT_FOUND, fileName));
+    }
+    return file;
+  }
+
+  public static void deleteFile(String filePath) {
+    File file = new File(filePath);
+    if (file.exists()){
+      try {
+        FileUtils.delete(file);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    }
+  }
+
+}

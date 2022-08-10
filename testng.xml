@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" data-provider-thread-count="2">
+  <listeners>
+    <listener class-name="com.nagp.listeners.FrameworkListener"/>
+    <listener class-name="com.nagp.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="AllProject Test" thread-count="3" parallel="methods">
+    <classes>
+      <class name="com.nagp.tests.HomePageTest"/>
+      <class name="com.nagp.tests.SignInPageTest"/>
+      <class name="com.nagp.tests.SearchPageTest"/>
+      <class name="com.nagp.tests.CreditSlipPageTest"/>
+      <class name="com.nagp.tests.ReorderTest"/>
+      <class name="com.nagp.tests.RegistrationPageTest"/>
+      <class name="com.nagp.tests.DressPageTest"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" data-provider-thread-count="2">
+  <listeners>
+    <listener class-name="com.nagp.listeners.FrameworkListener"/>
+    <listener class-name="com.nagp.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="Sanity Test" thread-count="3" parallel="methods">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.nagp.tests.HomePageTest"/>
+      <class name="com.nagp.tests.SignInPageTest"/>
+<!--      <class name="com.nagp.tests.DressPageTest"/>-->
+<!--      <class name="com.nagp.tests.SearchPageTest"/>-->
+<!--      <class name="com.nagp.tests.CreditSlipPageTest"/>-->
+<!--      <class name="com.nagp.tests.ReorderTest"/>-->
+<!--      <class name="com.nagp.tests.RegistrationPageTest"/>-->
+    </classes>
+  </test>
+</suite>
