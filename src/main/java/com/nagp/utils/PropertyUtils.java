@@ -1,19 +1,14 @@
 package com.nagp.utils;
 
 import static com.nagp.constants.FrameworkConstants.getConfigfilepath;
-import static com.nagp.constants.MessageConstants.ERROR_MESSAGE_FILE_NOT_FOUND;
 import static com.nagp.constants.MessageConstants.ERROR_MESSAGE_PROPERTY_NOT_FOUND;
 import static java.lang.String.format;
 import static java.lang.String.valueOf;
 import static java.util.Objects.isNull;
 
-import com.nagp.constants.FrameworkConstants;
-import com.nagp.constants.MessageConstants;
 import com.nagp.enums.ConfigProperties;
-import com.nagp.exceptions.IncorrectFilePathException;
 import com.nagp.exceptions.PropertyNotFoundException;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Properties;

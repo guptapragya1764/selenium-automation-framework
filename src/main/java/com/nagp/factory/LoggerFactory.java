@@ -7,7 +7,6 @@ import static java.lang.String.format;
 import static java.lang.Thread.currentThread;
 import static org.apache.logging.log4j.ThreadContext.put;
 
-import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -64,25 +63,25 @@ public final class LoggerFactory {
   }
 
   public static void debug(Object message) {
-    getCurrentLog().debug(getCallInfo() + message);
+    getCurrentLog().debug(format("%s%s", getCallInfo(), message));
   }
 
   public static void error(Object message) {
 
-    getCurrentLog().error(getCallInfo() + message);
+    getCurrentLog().error(format("%s%s", getCallInfo(), message));
   }
 
   public static void fatal(Object message) {
-    getCurrentLog().fatal(getCallInfo() + message);
+    getCurrentLog().fatal(format("%s%s", getCallInfo(), message));
   }
 
   public static void info(Object message) {
 
-    getCurrentLog().info(getCallInfo() + message);
+    getCurrentLog().info(format("%s%s", getCallInfo(), message));
   }
 
   public static void warn(Object message) {
-    getCurrentLog().warn(getCallInfo() + message);
+    getCurrentLog().warn(format("%s%s", getCallInfo(), message));
   }
 
 

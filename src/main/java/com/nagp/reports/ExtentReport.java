@@ -14,7 +14,6 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-import java.util.Objects;
 
 /**
  * Perform initialisation and termination of {@link com.aventstack.extentreports.ExtentReports}

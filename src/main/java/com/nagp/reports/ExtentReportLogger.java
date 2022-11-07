@@ -1,7 +1,6 @@
 package com.nagp.reports;
 
 import static com.aventstack.extentreports.MediaEntityBuilder.createScreenCaptureFromBase64String;
-import static com.nagp.driver.DriverManager.getDriver;
 import static com.nagp.enums.ConfigProperties.FAILEDSTEPSSCREENSHOTS;
 import static com.nagp.enums.ConfigProperties.PASSEDSTEPSSCREENSHOTS;
 import static com.nagp.enums.ConfigProperties.SKIPPEDSTEPSSCREENSHOTS;
@@ -9,8 +8,6 @@ import static com.nagp.reports.ExtentReportManager.getExtentTest;
 import static com.nagp.utils.PropertyUtils.getValue;
 import static com.nagp.utils.TestResultUtils.getBase64Image;
 import static com.nagp.utils.TestResultUtils.getScreenshotfile;
-
-import java.util.Objects;
 
 /**
  * This class helps in setting logs in Extent Report.

@@ -1,7 +1,5 @@
 package com.nagp.utils;
 
-import static com.nagp.factory.LoggerFactory.info;
-
 import com.mifmif.common.regex.Generex;
 
 /**

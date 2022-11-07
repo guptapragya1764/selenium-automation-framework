@@ -3,7 +3,6 @@ package com.nagp.pages;
 import static com.nagp.enums.WaitStrategy.CLICKABLE;
 import static com.nagp.enums.WaitStrategy.VISIBLE;
 
-import com.nagp.enums.WaitStrategy;
 import org.openqa.selenium.By;
 
 public final class MyAccountPage extends BasePage {

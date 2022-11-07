@@ -46,7 +46,6 @@ public class ReorderPage extends BasePage {
   }
 
   public ReorderPage clickPaymentByChequeLink() {
-//    waitTill(5);
     click(linkPaymentByCheque, CLICKABLE, "Payment By Cheque Link");
     return this;
   }

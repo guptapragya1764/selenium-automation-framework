@@ -13,11 +13,8 @@ import static org.apache.commons.io.FileUtils.delete;
 import static org.apache.commons.io.FileUtils.deleteDirectory;
 import static org.openqa.selenium.OutputType.FILE;
 
-import com.nagp.constants.MessageConstants;
-import com.nagp.factory.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
