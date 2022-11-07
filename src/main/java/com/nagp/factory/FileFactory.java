@@ -1,12 +1,10 @@
 package com.nagp.factory;
 
 import static com.nagp.constants.MessageConstants.ERROR_MESSAGE_FILE_NOT_FOUND;
-import static com.nagp.factory.LoggerFactory.info;
 import static java.lang.ClassLoader.getSystemClassLoader;
 import static java.lang.String.format;
 import static java.util.Objects.requireNonNull;
 
-import com.nagp.constants.FrameworkConstants;
 import com.nagp.exceptions.IncorrectFilePathException;
 import java.io.File;
 import java.io.IOException;
