@@ -1,6 +1,5 @@
 package com.nagp.factory;
 
-import static com.nagp.constants.FrameworkConstants.getCurrentLogFolderPath;
 import static com.nagp.constants.FrameworkConstants.getCurrentLogFolderPathWithTimeStamp;
 import static com.nagp.constants.MessageConstants.TESTCASE_EXECUTION_END_MESSAGE;
 import static com.nagp.constants.MessageConstants.TESTCASE_EXECUTION_START_MESSAGE;
