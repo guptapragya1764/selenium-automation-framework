@@ -16,6 +16,7 @@ public class AnnotationTransformer implements IAnnotationTransformer {
   /**
    * Helps in setting retry analyser annotation to all the test methods at run time.
    */
+  @Override
   public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor,
       Method testMethod, Class<?> occurringClazz) {
     annotation.setRetryAnalyzer(RetryFailedTests.class);
