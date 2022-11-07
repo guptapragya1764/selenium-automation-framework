@@ -58,31 +58,9 @@ public final class LoggerFactory {
     return callInfo;
   }
 
-  public static void trace(Object message) {
-    getCurrentLog().trace(message);
-  }
-
-  public static void debug(Object message) {
-    getCurrentLog().debug(format("%s%s", getCallInfo(), message));
-  }
-
-  public static void error(Object message) {
-
-    getCurrentLog().error(format("%s%s", getCallInfo(), message));
-  }
-
-  public static void fatal(Object message) {
-    getCurrentLog().fatal(format("%s%s", getCallInfo(), message));
-  }
-
   public static void info(Object message) {
 
     getCurrentLog().info(format("%s%s", getCallInfo(), message));
   }
-
-  public static void warn(Object message) {
-    getCurrentLog().warn(format("%s%s", getCallInfo(), message));
-  }
-
 
 }
