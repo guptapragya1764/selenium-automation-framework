@@ -35,5 +35,9 @@ public final class DriverManager {
   public static void setDriver(WebDriver webDriverRef) {
     driverThreadLocal.set(webDriverRef);
   }
+  
+  public static void removeDriver(){
+  driverThreadLocal.remove();
+  }
 
 }
