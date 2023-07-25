@@ -30,7 +30,11 @@ public final class MessageConstants {
   public static final String HOVERED_MESSAGE = "Hovered on %s";
   public static final String CLICKED_MESSAGE = "%s is clicked";
   public static final String VALUE_ENTERED_MESSAGE = "%s entered successfully in %s";
+  public static final String PASSWORD_ENTERED_MESSAGE = "****** entered successfully in %s";
   public static final String TEXT_RETRIEVED_MESSAGE = "Text for %s is retrieved";
   public static final String DISPLAYED_MESSAGE = "%s is displayed";
   public static final String NOT_DISPLAYED_MESSAGE = "%s is not displayed";
+  public static final String SWITCHED_TO_FRAME_MESSAGE = "Switched to frame %s";
+
+
 }

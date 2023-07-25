@@ -7,12 +7,14 @@ package com.nagp.enums;
  * Whenever a new value is added to property file, corresponding enum should be created here.
  */
 public enum ConfigProperties {
-  BROWSER,
-  FAILEDSTEPSSCREENSHOTS,
-  PASSEDSTEPSSCREENSHOTS,
-  PASSWORD,
-  RETRYFAILEDTESTS,
-  SKIPPEDSTEPSSCREENSHOTS,
-  URL,
-  USERNAME;
+    BROWSER,
+    FAILEDSTEPSSCREENSHOTS,
+    PASSEDSTEPSSCREENSHOTS,
+    PASSWORD,
+    RETRYFAILEDTESTS,
+    SKIPPEDSTEPSSCREENSHOTS,
+    URL,
+    USERNAME,
+    RUNMODE,
+    HUBURL;
 }

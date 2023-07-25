@@ -1,5 +1,7 @@
 package com.nagp.utils;
 
+import java.util.concurrent.ExecutionException;
+
 /**
  * Utility class for java helper method.
  */
@@ -38,9 +40,6 @@ public final class JavaUtils {
       e.printStackTrace();
        Thread.currentThread().interrupt();
     }
-    catch (ExecutionException ee) {
-    ee.printStackTrace();
-}
   }
 }
 

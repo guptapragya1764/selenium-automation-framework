@@ -1,13 +1,10 @@
 package com.nagp.reports;
 
 import static com.aventstack.extentreports.MediaEntityBuilder.createScreenCaptureFromBase64String;
-import static com.nagp.enums.ConfigProperties.FAILEDSTEPSSCREENSHOTS;
-import static com.nagp.enums.ConfigProperties.PASSEDSTEPSSCREENSHOTS;
-import static com.nagp.enums.ConfigProperties.SKIPPEDSTEPSSCREENSHOTS;
+import static com.nagp.enums.ConfigProperties.*;
 import static com.nagp.reports.ExtentReportManager.getExtentTest;
 import static com.nagp.utils.PropertyUtils.getValue;
 import static com.nagp.utils.TestResultUtils.getBase64Image;
-import static com.nagp.utils.TestResultUtils.getScreenshotfile;
 
 /**
  * This class helps in setting logs in Extent Report.
@@ -32,7 +29,7 @@ public final class ExtentReportLogger {
     if (getValue(PASSEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")) {
       getExtentTest()
           .pass(message, createScreenCaptureFromBase64String(getBase64Image()).build());
-      getScreenshotfile(message.replace(" ", "_") + "_passed");
+//      getScreenshotfile(message.replace(" ", "_") + "_passed");
     } else {
       getExtentTest().pass(message);
     }
@@ -49,7 +46,7 @@ public final class ExtentReportLogger {
     if (getValue(FAILEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")) {
       getExtentTest().fail(message,
           createScreenCaptureFromBase64String(getBase64Image()).build());
-      getScreenshotfile(message.replace(" ", "_") + "_failed");
+//      getScreenshotfile(message.replace(" ", "_") + "_failed");
     } else {
       getExtentTest().fail(message);
     }
@@ -64,7 +61,7 @@ public final class ExtentReportLogger {
   public static void skip(String message) {
     if (getValue(SKIPPEDSTEPSSCREENSHOTS).equalsIgnoreCase("yes")) {
       getExtentTest().skip(message, createScreenCaptureFromBase64String(getBase64Image()).build());
-      getScreenshotfile(message.replace(" ", "_") + "_failed");
+//      getScreenshotfile(message.replace(" ", "_") + "_failed");
     } else {
       getExtentTest().skip(message);
     }
